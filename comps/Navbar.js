@@ -1,22 +1,18 @@
+import Link from "next/link"
+import Image from 'next/Image'
+
 const Navbar = () => {
     return ( 
         <nav>
             <div className="logo">
-                <h1>Ninja List</h1>
+                <Image src="/next-js.svg" width={128} height={77}/>
             </div>
-            <a>Home</a>
-            <a>About</a>
-            <a>Ninja Listing</a>
+        <Link href="/"><a>Home</a></Link>
+        <Link href="/about"><a>About</a></Link>
+        <Link href="/demo/"><a>Users</a></Link>
+
         </nav>
      );
 }
  
 export default Navbar;
-<nav>
-    <div className="logo">
-        <h1>Ninja List</h1>
-    </div>
-    <a>Home</a>
-    <a>About</a>
-    <a>Ninja Listing</a>
-</nav>
